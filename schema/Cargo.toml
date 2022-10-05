@@ -1,0 +1,11 @@
+[package]
+name = "schema"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+context = { path = "../context" }
+
+async-graphql = "4"
+nanoid = "0.4"
+serde = "1"

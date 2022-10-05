@@ -1,0 +1,18 @@
+[workspace]
+members = [
+    "context",
+    "schema",
+    "server",
+]
+default-members = [
+    "server"
+]
+
+[profile.dev]
+incremental = true
+
+[profile.release]
+opt-level = "s"
+codegen-units = 1
+overflow-checks = false
+lto = true
